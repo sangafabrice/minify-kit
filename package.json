@@ -1,0 +1,21 @@
+{
+  "name": "minify-kit-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "flow-remove-types src --out-dir lib --pretty --extensions .json,.js",
+    "worktree": "git worktree add lib",
+    "commit": "cd lib/&& git commit --no-edit --amend --all",
+    "demo": "node demo"
+  },
+  "keywords": [],
+  "author": "Fabrice Sanga (https://github.com/sangafabrice)",
+  "license": "ISC",
+  "type": "module",
+  "workspaces": [ "lib" ],
+  "devDependencies": {
+    "flow-bin": "^0.292.0",
+    "flow-remove-types": "^2.292.0"
+  }
+}
