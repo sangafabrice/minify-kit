@@ -7,7 +7,8 @@
     "build": "flow-remove-types src --out-dir lib --pretty --extensions .json,.js",
     "worktree": "git worktree add lib",
     "commit": "cd lib/&& git commit --no-edit --amend --all",
-    "demo": "node demo"
+    "demo": "node demo",
+    "flow:stop": "flow stop; while (@(Stop-Process -Name flow -Force -PassThru -ErrorAction Ignore).Length) { Start-Sleep -Seconds 2 }"
   },
   "keywords": [],
   "author": "Fabrice Sanga (https://github.com/sangafabrice)",
@@ -16,9 +17,6 @@
   "workspaces": [ "lib" ],
   "devDependencies": {
     "flow-bin": "^0.292.0",
-    "flow-remove-types": "^2.292.0",
-    "flow-typed": "^4.1.1",
-    "svgo": "^4.0.0",
-    "terser": "^5.44.1"
+    "flow-remove-types": "^2.292.0"
   }
 }

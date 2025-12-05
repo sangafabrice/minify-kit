@@ -1,4 +1,5 @@
-import minify from "../lib/index.js";
+/** @flow */
+import minify from "../src/index.js";
 
 minify(
     ".js", 
