@@ -1,5 +1,4 @@
 /** @flow */
-// $FlowExpectedError[cannot-resolve-module]
 import { minify } from "terser";
 
 /**

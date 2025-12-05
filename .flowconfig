@@ -2,6 +2,7 @@
 <PROJECT_ROOT>
 !<PROJECT_ROOT>/src/
 !<PROJECT_ROOT>/demo/
+!<PROJECT_ROOT>/flow-typed/
 
 [include]
 

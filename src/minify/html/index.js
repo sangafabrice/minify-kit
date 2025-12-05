@@ -1,7 +1,5 @@
 /** @flow */
-// $FlowExpectedError[cannot-resolve-module]
 import { HTMLHint } from "htmlhint";
-// $FlowExpectedError[cannot-resolve-module]
 import { minify } from "html-minifier-terser";
 import ruleset from "./htmlhint.js";
 

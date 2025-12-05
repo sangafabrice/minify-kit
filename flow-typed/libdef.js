@@ -1,0 +1,1 @@
+declare type Extension = string | ".css" | ".html" | ".js" | ".svg";

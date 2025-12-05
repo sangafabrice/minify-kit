@@ -4,8 +4,6 @@ import minifyCSS from "./minify/css.js";
 import minifySVG from "./minify/svg.js";
 import minifyJS from "./minify/js.js";
 
-type Extension = string | ".css" | ".html" | ".js" | ".svg";
-
 /**
  * Minify file content based on its extension.
  * @param extname - The file extension.

@@ -1,9 +1,6 @@
 /** @flow */
-// $FlowExpectedError[cannot-resolve-module]
 import postcss from "postcss";
-// $FlowExpectedError[cannot-resolve-module]
 import presetEnv from "postcss-preset-env";
-// $FlowExpectedError[cannot-resolve-module]
 import cssnano from "cssnano";
 
 // Preconfigured PostCSS processor
