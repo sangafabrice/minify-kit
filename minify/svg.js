@@ -1,11 +1,12 @@
+/** @flow */
 import { optimize } from "svgo";
 
 /**
  * Minify SVG file content.
  * @alias minifySVG
- * @param {string} content - Raw file content to minify.
- * @returns {string} The minified content
+ * @param content - Raw file content to minify.
+ * @returns The minified content
  */
-export default function(content) {
+export default function(content: string): string {
     return optimize(content, { multipass: true }).data;
 }

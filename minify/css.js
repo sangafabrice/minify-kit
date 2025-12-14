@@ -1,3 +1,4 @@
+/** @flow */
 import postcss from "postcss";
 import presetEnv from "postcss-preset-env";
 import cssnano from "cssnano";
@@ -8,9 +9,9 @@ const pcssproc = postcss([presetEnv, cssnano]);
 /**
  * Minify CSS file content.
  * @alias minifyCSS
- * @param {string} content - Raw file content to minify.
- * @returns {Promise<string>} A promise that resolves to the minified content
+ * @param content - Raw file content to minify.
+ * @returns A promise that resolves to the minified content
  */
-export default function(content) {
+export default function(content: string): Promise<string> {
     return pcssproc.process(content).async().then(({ css }) => css);
 }
