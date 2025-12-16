@@ -1,4 +1,5 @@
 /**  */
+// $FlowExpectedError[cannot-resolve-module]
 import { optimize } from "svgo";
 
 /**
