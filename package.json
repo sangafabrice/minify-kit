@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "Lightweight wrapper around CSS/HTML/JS/SVG minifiers.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "use:pwsh": "npm config set script-shell=pwsh --location=project",
+    "exclude:config": "cd '.git/info'; '/.idea' >> exclude; '/.npmrc' >> exclude",
+    "ignore:root": "@'\n.gitignore\n/.idea\n/.npmrc\n'@ >> .gitignore",
+    "ignore:config-file": "'/.idea' + \"`n\" + '/.npmrc' >> .idea/.gitignore",
+    "ignore:config-git": "git config --local core.excludesfile .idea/.gitignore",
+    "ignore:config": "npm run ignore:config-file; npm run ignore:config-git"
+  },
   "keywords": [],
   "author": "Fabrice Sanga",
   "license": "ISC",

@@ -7,6 +7,6 @@ import { optimize } from "svgo";
  * @param content - Raw file content to minify.
  * @returns The minified content
  */
-export default function(content: string): string {
+export default function(content/* : string */)/* : string */ {
     return optimize(content, { multipass: true }).data;
 }

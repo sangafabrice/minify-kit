@@ -7,6 +7,6 @@ import { minify } from "terser";
  * @param content - Raw file content to minify.
  * @returns A promise that resolves to the minified content
  */
-export default function(content: string): Promise<string> {
+export default function(content/* : string */)/* : Promise<string> */ {
     return minify(content, { module: true }).then(({ code }) => code);
 }
