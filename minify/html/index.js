@@ -1,7 +1,5 @@
 /** @flow */
-// $FlowExpectedError[cannot-resolve-module]
 import { HTMLHint } from "htmlhint";
-// $FlowExpectedError[cannot-resolve-module]
 import { minify } from "html-minifier-terser";
 import ruleset from "./htmlhint.js";
 
@@ -11,7 +9,7 @@ import ruleset from "./htmlhint.js";
  * @param content - Raw file content to minify.
  * @returns A promise that resolves to the minified content
  */
-export default function(content: string): Promise<string> {
+export default function(content/* : string */)/* : Promise<string> */ {
     const hints = HTMLHint.verify(content, ruleset);
     if (hints.length) throw new Error(hints);
     return minify(content, { collapseWhitespace: true });

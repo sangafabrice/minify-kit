@@ -11,7 +11,7 @@ import minifyJS from "./minify/js.js";
  * @param content - Raw file content to minify.
  * @returns A promise that resolves to the minified content
  */
-export default async function(extname: Extension, content: string): Promise<string> {
+export default async function(extname/* : Extension */, content/* : string */)/* : Promise<string> */ {
     switch (extname) {
         case ".css": return minifyCSS(content);
         case ".svg": return minifySVG(content);
