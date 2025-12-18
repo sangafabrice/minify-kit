@@ -1,0 +1,13 @@
+/** @flow */
+/**
+ * The template extensions.
+ */
+export type Extension = ".css" | ".html" | ".js" | ".svg";
+
+/**
+ * Minify file content based on its extension.
+ * @param extname - The file extension.
+ * @param content - Raw file content to minify.
+ * @returns A promise that resolves to the minified content
+ */
+declare export default function minify(extname: Extension, content: string): Promise<string>;
