@@ -8,5 +8,5 @@ import { minify } from "terser";
  * @returns A promise that resolves to the minified content
  */
 export default function(content/* : string */)/* : Promise<string> */ {
-    return minify(content, { module: true }).then(({ code }) => code);
+    return minify(content, { module: true }).then(({ code = "" }) => code);
 }
