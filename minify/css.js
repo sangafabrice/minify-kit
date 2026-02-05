@@ -1,6 +1,6 @@
+import cssnano from "cssnano";
 import postcss from "postcss";
 import presetEnv from "postcss-preset-env";
-import cssnano from "cssnano";
 
 // Preconfigured PostCSS processor
 const pcssproc = postcss([presetEnv, cssnano]);

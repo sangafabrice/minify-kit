@@ -1,7 +1,7 @@
-import minifyHTML from "./minify/html/index.js";
 import minifyCSS from "./minify/css.js";
-import minifySVG from "./minify/svg.js";
+import minifyHTML from "./minify/html/index.js";
 import minifyJS from "./minify/js.js";
+import minifySVG from "./minify/svg.js";
 
 async function minify(extname, content) {
     switch (extname) {
