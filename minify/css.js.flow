@@ -1,0 +1,10 @@
+/** @flow */
+
+/**
+ * Minify CSS file content.
+ * @param content - Raw file content to minify.
+ * @returns A promise that resolves to the minified content
+ */
+declare export default function minifyCSS(
+    content: string
+): Promise<string>;

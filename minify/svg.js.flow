@@ -1,0 +1,10 @@
+/** @flow */
+
+/**
+ * Minify SVG file content.
+ * @param content - Raw file content to minify.
+ * @returns The minified content
+ */
+declare export default function minifySVG(
+    content: string
+): string;
