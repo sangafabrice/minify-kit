@@ -1,5 +1,4 @@
 /** @flow */
-/*jslint white fart*/
 import { HTMLHint } from "htmlhint";
 import { minify } from "html-minifier-terser";
 import ruleset from "./htmlhint.js";

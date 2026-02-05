@@ -1,3 +1,3 @@
-/*jslint-disable*/
+/* jshint ignore:start */
 export { default } from "./htmlhint.json" with { type: "json" };
-/*jslint-enable*/
+/* jshint ignore:end */

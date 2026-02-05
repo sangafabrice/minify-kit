@@ -1,5 +1,4 @@
 /** @flow */
-/*jslint white fart*/
 import postcss from "postcss";
 import presetEnv from "postcss-preset-env";
 import cssnano from "cssnano";

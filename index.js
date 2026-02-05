@@ -1,4 +1,3 @@
-/*jslint white*/
 import minifyHTML from "./minify/html/index.js";
 import minifyCSS from "./minify/css.js";
 import minifySVG from "./minify/svg.js";

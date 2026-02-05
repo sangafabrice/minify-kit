@@ -1,5 +1,4 @@
 /** @flow */
-/*jslint white fart*/
 import { optimize } from "svgo";
 
 /**

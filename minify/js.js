@@ -1,5 +1,4 @@
 /** @flow */
-/*jslint white fart*/
 import { minify } from "terser";
 
 /**
