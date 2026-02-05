@@ -1,12 +1,14 @@
 /** @flow */
+/*jslint white fart*/
 import { optimize } from "svgo";
 
 /**
  * Minify SVG file content.
- * @alias minifySVG
  * @param content - Raw file content to minify.
  * @returns The minified content
  */
-export default function(content/* : string */)/* : string */ {
+function minifySVG(content/* : string */)/* : string */ {
     return optimize(content, { multipass: true }).data;
 }
+
+export default Object.freeze(minifySVG) /*:: as typeof(minifySVG) */;
