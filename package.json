@@ -11,8 +11,8 @@
   "dependencies": {
     "cssnano": "^7.1.2",
     "html-minifier-terser": "^7.2.0",
-    "htmlhint": "^1.8.0",
+    "htmlhint": "^1.8.1",
     "postcss": "^8.5.6",
-    "postcss-preset-env": "^11.1.2"
+    "postcss-preset-env": "^11.1.3"
   }
 }
