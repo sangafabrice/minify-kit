@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Lightweight wrapper around CSS/HTML/JS/SVG minifiers.",
   "main": "index.js",
+  "exports": {
+    "require": "./index.cjs",
+    "import": "./index.js",
+    "default": "./index.js"
+  },
   "scripts": {},
   "keywords": [],
   "author": "Fabrice Sanga",
